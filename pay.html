@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pay</title>
+</head>
+<body>
+  <div class="nav">
+    <nav class="navegation" >
+      <a href="index.html">Previous Menu</a>
+    </nav>
+  </div>
+  <div class="dates">
+    <div class="dates__form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Name">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" required placeholder="Last Name">
+        <label for="amountPayable">Amount Payable</label>
+        <input type="number" name="amountPayable" id="amountPayable" required placeholder="Amount Payable">
+        <select name="select" id="select" required>
+          <option value="paymentMethod" hidden>payment method</option>
+          <option value="cash">Cash</option>
+          <option value="debitCard">Debit Card</option>
+          <option value="creditCard">Credit Card</option>
+        </select>
+        <select name="cash" id="cash" required>
+          <option value="select" hidden >Select</option>
+          <option value="bbva">BBVA</option>
+          <option value="banamex">BANAMEX</option>
+          <option value="santander">SANTANDER</option>
+          <option value="banorte">BANORTE</option>
+        </select>
+        <label for="expirationDate">Expiration Date</label>
+        <input type="date" required>
+        <label for="segurity">Segurity Code</label>
+        <input type="password" placeholder="NIP" required>
+        <div class="link">
+          <button type="submit">Confirm Buy </button>
+          <button type="reset">Cancel Buy</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
