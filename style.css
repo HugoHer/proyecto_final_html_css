@@ -37,6 +37,7 @@ a {
 p{
   color: white;
   font-family: Georgia;
+  padding-left: 10px;
 }
 
 .container__box-link{
@@ -52,16 +53,17 @@ p{
 }
 
 img{
-  width: 20vw;
+  width: 25vw;
   height: 20vh;
 }
 
 .container__box{
   display: flex;
-  width: 25vw;
+  width: 30vw;
   height: 55vh;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
 }
 
 .container__box__image{
@@ -188,4 +190,50 @@ button::before{
   width: 30vw;
   justify-content: space-around;
   margin-top: 5px;
+}
+
+.about{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__image{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__image-paragraph{
+  color: white;
+  font-size: 1em;
+  font-family: Georgia;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.about__image-image{
+  height: 35vh;
+  width: 75vw;
+}
+
+::placeholder{
+  color: red;
+  font-family: cursive;
+  padding-left: 20px;
+}
+
+select{
+  color: red;
+  font-family: cursive;
+  padding-left: 20px;
 }
