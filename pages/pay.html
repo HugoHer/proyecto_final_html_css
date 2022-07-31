@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Pay</title>
 </head>
+
 <body>
   <div class="nav">
-    <nav class="navegation" >
-      <a href="index.html">Previous Menu</a>
+    <nav class="navegation">
+      <a href="../index.html">Previous Menu</a>
     </nav>
   </div>
   <div class="dates">
@@ -29,7 +31,7 @@
           <option value="creditCard">Credit Card</option>
         </select>
         <select name="cash" id="cash" required>
-          <option value="select" hidden >Select</option>
+          <option value="select" hidden>Select</option>
           <option value="bbva">BBVA</option>
           <option value="banamex">BANAMEX</option>
           <option value="santander">SANTANDER</option>
@@ -40,12 +42,21 @@
         <label for="segurity">Segurity Code</label>
         <input type="password" placeholder="NIP" required>
         <div class="link">
-          <button type="submit">Confirm Buy </button>
-          <button type="reset">Cancel Buy</button>
+          <button type="submit" onclick="message()">Confirm Buy </button>
+          <button type="reset" onclick="cancel()">Cancel Buy</button>
         </div>
       </form>
     </div>
   </div>
-
+  <script>
+    function message() {
+      alert("successful purchase")
+    }
+    function cancel() {
+      alert("cancel purchase")
+    }
+    alert("here you can make your payment");
+  </script>
 </body>
+
 </html>

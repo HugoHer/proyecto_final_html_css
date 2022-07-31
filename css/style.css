@@ -1,14 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: black;
 }
 
-.nav{
+.nav {
   display: flex;
   height: 15vh;
   width: 100vw;
@@ -24,8 +24,7 @@ a {
   font-family: Helvetica;
 }
 
-.navegation{
-
+.navegation {
   margin-right: 25px;
   height: 10vh;
   width: 50vw;
@@ -34,17 +33,17 @@ a {
   align-items: center;
 }
 
-p{
+p {
   color: white;
   font-family: Georgia;
   padding-left: 10px;
 }
 
-.container__box-link{
+.box-link {
   color: yellow;
 }
 
-.container{
+.container {
   display: flex;
   height: 65vh;
   width: 100vw;
@@ -52,12 +51,12 @@ p{
   align-items: center;
 }
 
-img{
-  width: 25vw;
+img {
+  width: 18vw;
   height: 20vh;
 }
 
-.container__box{
+.box {
   display: flex;
   width: 30vw;
   height: 55vh;
@@ -66,7 +65,7 @@ img{
   padding-left: 10px;
 }
 
-.container__box__image{
+.box__image {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,12 +73,12 @@ img{
   justify-content: center;
 }
 
-h2{
+h2 {
   color: rgb(205, 219, 9);
   font-size: 2em;
 }
 
-.header{
+.header {
   height: 15vh;
   display: flex;
   align-items: center;
@@ -87,7 +86,7 @@ h2{
   flex-direction: column;
 }
 
-.footer{
+.footer {
   color: white;
   height: 5vh;
   display: flex;
@@ -96,19 +95,19 @@ h2{
   padding-right: 20px;
 }
 
-.container__box__image-paragraph{
+.box__image-paragraph {
   color: rgb(189, 189, 56);
   font-size: 2em;
   font-family: sans-serif;
 }
 
-.container__box__image-price{
+.box__image-price {
   color: green;
   font-size: 2em;
   font-family: Impact;
 }
 
-.promocion{
+.promocion {
   font-size: 1.5em;
   padding-left: 15px;
   display: flex;
@@ -116,83 +115,100 @@ h2{
   align-items: flex-end;
 }
 
-.promocion-paragraph{
+.promocion-paragraph {
   color: rgba(252, 252, 134, 0.842);
   font-family: monospace;
 }
 
-.dates{
-  height: 60vh;
-  width: 95vw;
+.dates {
+  height: 70vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.dates__form{
-  height: 55vh;
-  width: 70vw;
+.dates__form {
+  height: 65vh;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid greenyellow;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 32, 0, 1) 0%,
+    rgba(120, 121, 9, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 25px;
 }
 
-form{
-  color: white;
+form {
+  color: rgb(53, 2, 2);
   display: flex;
   flex-direction: column;
   height: 60vh;
-  width: 30vw;
+  width: 60vw;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   border-radius: 35px;
-  gap: 5px;
-  border: 1px dashed rgb(241, 6, 6);
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 25px;
 }
 
-input{
-  width: 10vw;
+input {
+  width: 20vw;
+  height: 9vh;
+  border-radius: 20px;
 }
 
-button{
+button {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   outline: 2px solid yellow;
   position: relative;
   overflow: hidden;
-  transition: color 1s ;
+  transition: color 1s;
   color: red;
   height: 6vh;
+  width: 20vw;
+  border-radius: 25px;
 }
 
-button:hover{
+button:hover {
   color: rgb(145, 99, 187);
 }
 
-button::before{
+button::before {
   content: " ";
   position: absolute;
   top: 0;
   left: -50px;
   width: 0;
   height: 100%;
-  background-color: rgb(248, 175, 64);
+  background-color: rgb(64, 248, 110);
   transform: skewX(35deg);
   z-index: -1;
   transition: width 1s;
 }
 
-.link{
+.link {
   display: flex;
   width: 30vw;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 5px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.about{
+.about {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -201,7 +217,7 @@ button::before{
   justify-content: center;
 }
 
-.about__image{
+.about__image {
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -209,7 +225,7 @@ button::before{
   align-items: center;
 }
 
-.about__image-paragraph{
+.about__image-paragraph {
   color: white;
   font-size: 1em;
   font-family: Georgia;
@@ -221,19 +237,124 @@ button::before{
   padding-right: 15px;
 }
 
-.about__image-image{
-  height: 35vh;
-  width: 75vw;
+.about__image-image {
+  height: 25vh;
+  width: 25vw;
 }
 
-::placeholder{
+::placeholder {
   color: red;
   font-family: cursive;
   padding-left: 20px;
 }
 
-select{
+select {
   color: red;
   font-family: cursive;
   padding-left: 20px;
+  width: 20vw;
+}
+
+a:hover {
+  color: red;
+}
+
+img:hover {
+  transition: 2s ease-in-out;
+  -webkit-transform: rotateY(360deg);
+}
+
+span {
+  color: white;
+}
+
+.css {
+  width: 7vw;
+  height: 7vh;
+}
+
+main {
+  color: yellow;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    width: 100%;
+    height: 38%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    flex-direction: column;
+  }
+
+  .box {
+    display: flex;
+    width: 80%;
+    height: 14%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    height: 15%;
+    width: 90%;
+    border-bottom: 1px solid yellow;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  img {
+    width: 10vw;
+    height: 8vh;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
+  footer {
+    color: rgb(245, 33, 33);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  form {
+    color: rgb(53, 2, 2);
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 35px;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
 }
